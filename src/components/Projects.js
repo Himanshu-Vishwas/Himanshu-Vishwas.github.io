@@ -5,6 +5,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import anprojImg1 from "../assets/img/andp1.png";
 import anprojImg2 from "../assets/img/andp2.png";
+import othrp1 from "../assets/img/othp1.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -40,7 +41,15 @@ export const Projects = () => {
       imgUrl: anprojImg2,
     },
   ]
+  const otherprojects = [
+    {
+      title: "Game Controller using Hand Gestures",
+      description: "Python-opencv and turtle are used",
+      imgUrl: othrp1,
+    },
+  ]
   
+
   
   ;
 
@@ -66,6 +75,16 @@ export const Projects = () => {
                           target="_blank"
                         >
                           BMI Calculator
+                        </a>
+                      </li>
+                      <li>
+                      Game controller using hand gestures.(Python-opencv + turtle) 
+                        <a
+                          href="https://www.youtube.com/watch?v=jBuYwrX5bQY&ab_channel=HimanshuKumar"
+                          alt=""
+                          target="_blank"
+                        >
+                        _Check out on YouTube.
                         </a>
                       </li>
                       <li>Calculator</li>
@@ -114,7 +133,11 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>to be added.</p>
+                      <Row>
+                          {otherprojects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
