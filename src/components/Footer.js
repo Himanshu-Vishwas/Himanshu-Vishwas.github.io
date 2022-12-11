@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <MailchimpForm />
+          {/* <MailchimpForm /> */}
           <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />
           </Col>
@@ -20,7 +20,7 @@ export const Footer = () => {
                 <a href="https://github.com/Himanshu-Vishwas"><img src={navIcon2} alt="" target="_blank"/></a>
                 <a href="https://www.instagram.com/himanshu._.ig/"><img src={navIcon3} alt="" target="_blank"/></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>&copy; Himanshu </p>
           </Col>
         </Row>
       </Container>
