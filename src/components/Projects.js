@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import anprojImg1 from "../assets/img/andp1.png";
 import anprojImg2 from "../assets/img/andp2.png";
 import othrp1 from "../assets/img/othp1.png"
+import othrp2 from "../assets/img/othp2.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -47,6 +48,11 @@ export const Projects = () => {
       description: "Python-opencv and turtle are used",
       imgUrl: othrp1,
     },
+    {
+      title: "Hand Wave Image Viewer",
+      description: "Controlling the Image Viewer with hand wave.",
+      imgUrl: othrp2,
+    },
   ]
   
 
@@ -81,6 +87,16 @@ export const Projects = () => {
                       Game controller using hand gestures.(Python-opencv + turtle) 
                         <a
                           href="https://www.youtube.com/watch?v=jBuYwrX5bQY&ab_channel=HimanshuKumar"
+                          alt=""
+                          target="_blank"
+                        >
+                        _Check out on YouTube.
+                        </a>
+                      </li>
+                      <li>
+                      Hand Wave Image Viewer (Python-opencv) project  
+                        <a
+                          href="https://youtu.be/SRGsFro-9ak"
                           alt=""
                           target="_blank"
                         >
