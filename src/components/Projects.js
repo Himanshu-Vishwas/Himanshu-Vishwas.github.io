@@ -49,7 +49,7 @@ export const Projects = () => {
       imgUrl: othrp1,
     },
     {
-      title: "Hand Wave Image Viewer",
+      title: "Hand Wave Image Viewer ",
       description: "Controlling the Image Viewer with hand wave.",
       imgUrl: othrp2,
     },
